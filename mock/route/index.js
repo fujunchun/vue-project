@@ -11,10 +11,6 @@ function createRoutes (pages) {
       let method = api.method.toLowerCase()
       router[method](api.url, (ctx, next) => {
         ctx.response.status = 200
-
-        if (typeof api.handleCtx === 'function') {
-          api.handleCtx(ctx)
-        }
         ctx.response.body = api.data(ctx)
       })
     })

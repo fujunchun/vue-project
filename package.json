@@ -1,6 +1,6 @@
 {
   "name": "project",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A Vue.js project",
   "author": "fujunchun <394744352@qq.com>",
   "private": true,
@@ -43,7 +43,8 @@
     "cross-env": "^5.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
-    "eslint": "^4.15.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",

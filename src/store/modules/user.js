@@ -1,10 +1,11 @@
 import { login as api } from '@/api'
 import { SET_TOKEN, SET_USER_INFO, LOG_OUT } from '../mutation-types'
 
-import { read, save, clear } from '@/utils/storage'
+import { read, save, clear } from '@utils/storage'
+import { TOKEN } from '@constant'
 
 const state = {
-  token: read('token'),
+  token: read(TOKEN),
   firstName: '',
   lastName: '',
   permission: []
@@ -74,7 +75,7 @@ const actions = {
       await api.logout()
       commit(LOG_OUT)
       // 清除本地存储中token
-      clear('token')
+      clear(TOKEN)
     } catch (e) {
       // TODO 登出失败，给出提示
     }

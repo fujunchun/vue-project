@@ -1,6 +1,6 @@
 import axios from 'axios'
-import conf from '@/config/axios.default.conf'
-import { read } from '@/utils/storage'
+import conf from '@config/axios.default.conf'
+import { read } from '@utils/storage'
 
 const instance = axios.create(conf)
 

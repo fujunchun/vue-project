@@ -6,9 +6,6 @@ module.exports = {
   getList: {
     method: 'GET',
     url: '/api/list',
-    handleCtx: (ctx) => {
-      ctx.response.status = 200
-    },
     data: () => {
       let list = []
 

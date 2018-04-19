@@ -6,9 +6,6 @@ module.exports = {
   login: {
     method: 'POST',
     url: '/api/login',
-    handleCtx: (ctx) => {
-      ctx.response.status = 200
-    },
     data: () => {
       return {
         result: 'success',
